@@ -122,7 +122,7 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="https://Telegraph-Image.akmgr.dpdns.org" target="_blank">
+                <a href="#" onclick="checkPassword()">
                     <i class="fas fa-images"></i>
                     <span>免费图床</span>
                 </a>
@@ -145,5 +145,16 @@
             <p>© 2025 Funny Time | 更多娱乐coming soon</p>
         </div>
     </div>
+
+    <script>
+        function checkPassword() {
+            const password = prompt("请输入密码访问免费图床:");
+            if (password === "akkadian") {
+                window.open("https://Telegraph-Image.akmgr.dpdns.org", "_blank");
+            } else if (password !== null) {
+                alert("密码错误，请重试!");
+            }
+        }
+    </script>
 </body>
 </html>
